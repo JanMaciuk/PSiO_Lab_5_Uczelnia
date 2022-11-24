@@ -8,15 +8,15 @@ public class Student extends Osoba {
     private boolean stacjonarny; // jeżeli false to niestacjonarny
     private ArrayList<Kurs> listaKursow;
 
-    public Student(int numerIndeksu, int rokStudiow, boolean erasmus, boolean pierwszyStopienStudiow, boolean stacjonarny, String imie, String nazwisko, String pesel, int wiek, String plec, String jedzenie) {
+    public Student(int numerIndeksu, int rokStudiow, boolean erasmus, boolean pierwszyStopienStudiow, boolean stacjonarny, String imie, String nazwisko, String pesel, int wiek, String plec, String jedzenie, ArrayList<Kurs> kursy) {
         super(imie, nazwisko, pesel, wiek, plec, jedzenie);
         this.numerIndeksu = numerIndeksu;
         this.rokStudiow = rokStudiow;
         this.erasmus = erasmus;
         this.pierwszyStopienStudiow = pierwszyStopienStudiow;
         this.stacjonarny = stacjonarny;
-        //listaKursow.add(kurs1);
-        //listaKursow.add(kurs2);
+        listaKursow.addAll(kursy);
+
 
     }
     public Student() {
