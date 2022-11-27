@@ -6,7 +6,7 @@ public class Student extends Osoba {
     private boolean erasmus;
     private boolean pierwszyStopienStudiow; // jeżeli false to drugi stopien studiów (Nie mamy doktorantów na tej uczelni)
     private boolean stacjonarny; // jeżeli false to niestacjonarny
-    private ArrayList<Kurs> listaKursow = new ArrayList<Kurs>();
+    private ArrayList<Kurs> listaKursow = new ArrayList<>();
 
     public Student(int numerIndeksu, int rokStudiow, boolean erasmus, boolean pierwszyStopienStudiow, boolean stacjonarny, String imie, String nazwisko, String pesel, int wiek, String plec, String jedzenie, ArrayList<Kurs> kursy) {
         super(imie, nazwisko, pesel, wiek, plec, jedzenie);
